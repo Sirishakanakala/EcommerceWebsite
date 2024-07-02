@@ -22,11 +22,11 @@ const Logo = styled.img`
   margin-right: 1rem;
 `;
 
-const Title = styled.h1`
-  margin: 0;
-  font-size: 1.5rem;
-  color: #5B001B;
-`;
+// const Title = styled.h1`
+//   margin: 0;
+//   font-size: 1.5rem;
+//   color: #5B001B;
+// `;
 
 const Nav = styled.nav`
   display: flex;
@@ -36,7 +36,7 @@ const Nav = styled.nav`
 const NavLink = styled.a`
   color: #000;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   &:hover {
     text-decoration: underline;
   }
@@ -47,7 +47,7 @@ function Header() {
     <HeaderContainer>
       <LogoContainer>
         <Logo src={logo} alt="Amrutha Boutique Logo" />
-        <Title>Amrutha Boutique</Title>
+        {/* <Title>Amrutha Boutique</Title> */}
       </LogoContainer>
       <Nav>
         <NavLink href="/">Home</NavLink>
