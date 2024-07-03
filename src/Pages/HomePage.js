@@ -6,24 +6,27 @@ import ProductList from '../components/ProductList';
 import Carousel from '../components/Carousel';
 // import LatestCollection from '../components/CarouselProducts';
 import MomandDaughter from '../components/Momanddaughter';
-import SisterandBrother from '../components/SisterBroCombo';
-// import bg from '../assets/products/Header.png';
+// import SisterandBrother from '../components/SisterBroCombo';
+ import bg from '../assets/products/bg.png';
+
+ const Title2 = styled.h1`
+ margin: 0;
+ font-size: 1.5rem;
+ color: #5B001B;
+ text-align: center;
+`;
 
 
-// const Header = styled.header`
-//   height: 300px; /* Adjust height as needed */
-//   width: 100%; /* Adjust width as needed */
-//   background-image: url(${bg});
-//   background-size: cover;
-//   background-position: center;
-//   text-align: center;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   color: #7D2A36; /* Text color on top of the image */
-//   font-size: 1rem;
-//   font-family: 'Daydream', cursive; /* Apply Daydream font */
-// `;
+ const Welcome = styled.header`
+  background-color: rgba(236, 174, 200, 0.25);
+  background-image: url(${bg}); /* Use url() to reference the imported image */
+  background-size: cover; /* Optional: Adjust to fit your design needs */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+`;
 
 const Section = styled.section`
   padding: 2rem;
@@ -39,7 +42,9 @@ function HomePage() {
   return (
     <>
       
-     
+      <Welcome>
+        <Title2>Welcome to <br/>Amrutha Boutique</Title2>
+      </Welcome>
       <Section>
         {/* <Title>Latest Collection</Title>
         <LatestCollection /> */}
@@ -47,8 +52,7 @@ function HomePage() {
         <ProductList />
         <Title>Mom and Daughter Combos</Title>
         <MomandDaughter />
-        <Title>Brother and Sister Combos</Title>
-        <SisterandBrother />
+       
       </Section>
       <Section>
         <Title>Customer Reviews</Title>

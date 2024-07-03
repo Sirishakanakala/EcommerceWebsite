@@ -1,9 +1,9 @@
 // src/components/ProductList.js
 import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
-import ProductCard from './ProductCard';
+import ProductCard from './mothercard';
 import Search from './Search';
-import products from '../components/Allproducts';
+import products from '../data/motherdaughter';
 
 
 const ProductListContainer = styled.div`
@@ -20,7 +20,7 @@ const ProductListContainer = styled.div`
 const ProductCardWrapper = styled.div`
   flex: 0 0 auto;
   width: 200px; /* Fixed width for all cards */
-  height: 300px; /* Fixed height for all cards */
+  height: 320px; /* Fixed height for all cards */
   margin-right: 1rem;
   display: flex;
   justify-content: center;

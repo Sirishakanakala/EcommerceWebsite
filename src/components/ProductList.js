@@ -3,7 +3,7 @@ import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import ProductCard from './ProductCard';
 import Search from './Search';
-import products from '../components/Allproducts';
+import products from '../data/Allproducts';
 
 
 const ProductListContainer = styled.div`
