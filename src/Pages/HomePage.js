@@ -8,6 +8,7 @@ import Carousel from '../components/Carousel';
 import MomandDaughter from '../components/Momanddaughter';
 // import SisterandBrother from '../components/SisterBroCombo';
  import bg from '../assets/products/bg.png';
+ import NewArrivals from '../components/NewArrivals';
 
  const Title2 = styled.h1`
  margin: 0;
@@ -45,6 +46,7 @@ function HomePage() {
       <Welcome>
         <Title2>Welcome to <br/>Amrutha Boutique</Title2>
       </Welcome>
+      <NewArrivals/>
       <Section>
         {/* <Title>Latest Collection</Title>
         <LatestCollection /> */}

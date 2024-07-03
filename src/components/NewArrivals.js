@@ -4,36 +4,35 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import img1 from '../assets/products/Header.png'
+import img1 from '../assets/newarrivals/1.png';
+import img2 from '../assets/newarrivals/2.png';
+import img3 from '../assets/newarrivals/3.png';
 
 
-const latestCollection = [
+const reviews = [
   { image: img1 },
-  { image: img1 },
-  { image: img1 },
-  
-  
-  // Add more review images as needed
+  { image: img2 },
+  { image: img3 },
 ];
 
 const CarouselContainer = styled.div`
-  width: 80%;
-  margin: 2rem auto;
+  width: 90%;
+  margin: 1rem auto;
 `;
 
 const ReviewImage = styled.img`
   width: 100%;
-  height: 300px;
+  height: 350px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 2px;
 `;
 
-function LatestCollection() {
+function NewArrivals() {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -56,10 +55,9 @@ function LatestCollection() {
   return (
     <CarouselContainer>
       <Slider {...settings}>
-        {latestCollection.map((review, index) => (
+        {reviews.map((review, index) => (
           <div key={index}>
             <ReviewImage src={review.image} alt={`Review ${index + 1}`} />
-          
           </div>
         ))}
       </Slider>
@@ -67,4 +65,4 @@ function LatestCollection() {
   );
 }
 
-export default LatestCollection;
+export default NewArrivals;
