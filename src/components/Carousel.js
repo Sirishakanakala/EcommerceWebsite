@@ -4,13 +4,12 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import img1 from '../assets/products/11.png';
-import img2 from '../assets/products/2.png';
-import img3 from '../assets/products/3.png';
-import img4 from '../assets/products/4.png';
-import img5 from '../assets/products/5.png';
-import img6 from '../assets/products/10.png';
-import img7 from '../assets/products/1.png';
+import img1 from '../assets/Reviews/1.png';
+import img2 from '../assets/Reviews/2.png';
+import img3 from '../assets/Reviews/3.png';
+import img4 from '../assets/Reviews/4.png';
+import img5 from '../assets/Reviews/5.png';
+import img6 from '../assets/Reviews/6.png';
 
 const reviews = [
   { image: img1 },
@@ -19,7 +18,6 @@ const reviews = [
   { image: img4 },
   { image: img5 },
   { image: img6 },
-  { image: img7 },
   // Add more review images as needed
 ];
 
